@@ -1,0 +1,17 @@
+C:\Inwentaryzacja\Inwentaryzacja\bin\Debug\net7.0-windows\Inwentaryzacja.exe
+C:\Inwentaryzacja\Inwentaryzacja\bin\Debug\net7.0-windows\Inwentaryzacja.deps.json
+C:\Inwentaryzacja\Inwentaryzacja\bin\Debug\net7.0-windows\Inwentaryzacja.runtimeconfig.json
+C:\Inwentaryzacja\Inwentaryzacja\bin\Debug\net7.0-windows\Inwentaryzacja.dll
+C:\Inwentaryzacja\Inwentaryzacja\bin\Debug\net7.0-windows\Inwentaryzacja.pdb
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.csproj.AssemblyReference.cache
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.Form1.resources
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.csproj.GenerateResource.cache
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.AssemblyInfoInputs.cache
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.AssemblyInfo.cs
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.csproj.CoreCompileInputs.cache
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.dll
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\refint\Inwentaryzacja.dll
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.pdb
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\Inwentaryzacja.genruntimeconfig.cache
+C:\Inwentaryzacja\Inwentaryzacja\obj\Debug\net7.0-windows\ref\Inwentaryzacja.dll
