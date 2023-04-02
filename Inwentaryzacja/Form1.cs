@@ -14,7 +14,7 @@ namespace Inwentaryzacja
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(1);
         }
     }
 }
