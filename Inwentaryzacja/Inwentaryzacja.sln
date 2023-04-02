@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.33502.453
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inwentaryzacja", "Inwentaryzacja.csproj", "{77DB3684-75E8-490D-BA53-89B38269EB6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inwentaryzacja", "Inwentaryzacja.csproj", "{4A0506CE-6FE3-4C84-BBD2-DA3A7853B796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77DB3684-75E8-490D-BA53-89B38269EB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77DB3684-75E8-490D-BA53-89B38269EB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77DB3684-75E8-490D-BA53-89B38269EB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77DB3684-75E8-490D-BA53-89B38269EB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0506CE-6FE3-4C84-BBD2-DA3A7853B796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0506CE-6FE3-4C84-BBD2-DA3A7853B796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0506CE-6FE3-4C84-BBD2-DA3A7853B796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0506CE-6FE3-4C84-BBD2-DA3A7853B796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2F63520B-6A01-4428-85F1-8688AFA6E43A}
+		SolutionGuid = {395C3C2B-B26E-41A9-BEE0-3EAF3A82F072}
 	EndGlobalSection
 EndGlobal
