@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            button_log = new Button();
+            SuspendLayout();
+            // 
+            // button_log
+            // 
+            button_log.Location = new Point(291, 301);
+            button_log.Name = "button_log";
+            button_log.Size = new Size(141, 39);
+            button_log.TabIndex = 0;
+            button_log.Text = "Zaloguj";
+            button_log.UseVisualStyleBackColor = true;
+            button_log.Click += button1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button_log);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button_log;
     }
 }
