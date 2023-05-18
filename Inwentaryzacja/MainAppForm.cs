@@ -29,7 +29,12 @@ namespace Inwentaryzacja
             AddCommodityForm addCommodityForm = new AddCommodityForm();
             addCommodityForm.ShowDialog();
         }
-
+        private void CheckStock_Click(object sender, EventArgs e)
+        {
+            // Otwórz okno "CheckStockForm" jako dialogowe
+            CheckStockForm checkStockForm = new CheckStockForm();
+            checkStockForm.ShowDialog();
+        }
         // Dodaj inne metody i logikę specyficzną dla okna głównego aplikacji
     }
 }
