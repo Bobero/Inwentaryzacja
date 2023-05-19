@@ -15,6 +15,9 @@ namespace Inwentaryzacja
         public MainAppForm()
         {
             InitializeComponent();
+
+            // Przypisanie obsługi zdarzenia FormClosing
+            FormClosing += MainAppForm_FormClosing;
         }
 
         private void MainAppForm_Load(object sender, EventArgs e)
@@ -35,6 +38,14 @@ namespace Inwentaryzacja
             CheckStockForm checkStockForm = new CheckStockForm();
             checkStockForm.ShowDialog();
         }
-        // Dodaj inne metody i logikę specyficzną dla okna głównego aplikacji
+        private void MainAppForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Sprawdź, czy zamknięcie dotyczy głównego okna aplikacji
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Zamknij wszystkie otwarte okna aplikacji
+                Application.Exit();
+            }
+        }
     }
 }
