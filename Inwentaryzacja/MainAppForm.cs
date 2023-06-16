@@ -24,6 +24,7 @@ namespace Inwentaryzacja
         {
             // Kod do wykonania po załadowaniu okna aplikacji
             AddCommodity.Click += AddCommodity_Click;
+            UsersManage.Click += UsersManage_Click;
         }
 
         private void AddCommodity_Click(object sender, EventArgs e)
@@ -32,12 +33,14 @@ namespace Inwentaryzacja
             AddCommodityForm addCommodityForm = new AddCommodityForm();
             addCommodityForm.ShowDialog();
         }
-        private void CheckStock_Click(object sender, EventArgs e)
+
+        private void UsersManage_Click(object sender, EventArgs e)
         {
-            // Otwórz okno "CheckStockForm" jako dialogowe
-            CheckStockForm checkStockForm = new CheckStockForm();
-            checkStockForm.ShowDialog();
+            // Otwórz okno "UsersManageForm" jako dialogowe
+            UsersManageForm usersManageForm = new UsersManageForm();
+            usersManageForm.ShowDialog();
         }
+
         private void MainAppForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Sprawdź, czy zamknięcie dotyczy głównego okna aplikacji

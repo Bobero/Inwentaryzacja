@@ -1,6 +1,6 @@
 ﻿namespace Inwentaryzacja
 {
-    partial class CheckStockForm
+    partial class UsersManageForm
     {
         /// <summary>
         /// Required designer variable.

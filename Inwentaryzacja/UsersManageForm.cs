@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inwentaryzacja
 {
-    public partial class CheckStockForm : Form
+    public partial class UsersManageForm : Form
     {
-        public CheckStockForm()
+        public UsersManageForm()
         {
             InitializeComponent();
         }

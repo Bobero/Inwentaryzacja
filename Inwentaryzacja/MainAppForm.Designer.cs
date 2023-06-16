@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             AddCommodity = new Button();
-            CheckStock = new Button();
+            UsersManage = new Button();
             SuspendLayout();
             // 
             // AddCommodity
             // 
-            AddCommodity.Location = new Point(12, 12);
+            AddCommodity.Location = new Point(12, 69);
             AddCommodity.Name = "AddCommodity";
             AddCommodity.Size = new Size(166, 48);
             AddCommodity.TabIndex = 0;
             AddCommodity.Text = "Dodaj Towar";
             AddCommodity.UseVisualStyleBackColor = true;
             // 
-            // CheckStock
+            // UsersManage
             // 
-            CheckStock.Location = new Point(12, 88);
-            CheckStock.Name = "CheckStock";
-            CheckStock.Size = new Size(166, 48);
-            CheckStock.TabIndex = 1;
-            CheckStock.Text = "Stan magazynu";
-            CheckStock.UseVisualStyleBackColor = true;
+            UsersManage.Location = new Point(211, 69);
+            UsersManage.Name = "UsersManage";
+            UsersManage.Size = new Size(166, 48);
+            UsersManage.TabIndex = 1;
+            UsersManage.Text = "Zarządzaj Użytkownikami";
+            UsersManage.UseVisualStyleBackColor = true;
             // 
             // MainAppForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(CheckStock);
+            Controls.Add(UsersManage);
             Controls.Add(AddCommodity);
             Name = "MainAppForm";
             Text = "MainAppForm";
@@ -66,6 +66,6 @@
         #endregion
 
         private Button AddCommodity;
-        private Button CheckStock;
+        private Button UsersManage;
     }
 }

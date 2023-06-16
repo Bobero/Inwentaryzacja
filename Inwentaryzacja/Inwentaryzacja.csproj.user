@@ -4,7 +4,7 @@
     <Compile Update="AddCommodityForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CheckStockForm.cs">
+    <Compile Update="UsersManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">

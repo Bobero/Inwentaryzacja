@@ -1,4 +1,4 @@
-namespace Inwentaryzacja
+ï»¿namespace Inwentaryzacja
 {
     public partial class Form1 : Form
     {
@@ -6,16 +6,16 @@ namespace Inwentaryzacja
         {
             InitializeComponent();
 
-            // Przypisanie obs³ugi zdarzenia KeyDown dla pola has³a
+            // Przypisanie obsÂ³ugi zdarzenia KeyDown dla pola hasÂ³a
             textBox_Haslo.KeyDown += TextBox_Haslo_KeyDown;
 
-            // Przypisanie obs³ugi zdarzenia FormClosing
+            // Przypisanie obsÂ³ugi zdarzenia FormClosing
             FormClosing += LoginForm_FormClosing;
         }
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // SprawdŸ, czy zamkniêcie dotyczy okna logowania
+            // SprawdÅ¸, czy zamkniÃªcie dotyczy okna logowania
             if (e.CloseReason == CloseReason.UserClosing)
             {
                 // Zamknij wszystkie otwarte okna aplikacji
@@ -27,7 +27,7 @@ namespace Inwentaryzacja
         {
             if (e.KeyCode == Keys.Enter)
             {
-                // Wywo³aj metodê weryfikuj¹c¹ logowanie
+                // WywoÂ³aj metodÃª weryfikujÂ¹cÂ¹ logowanie
                 button_Zaloguj_Click(sender, e);
             }
         }
@@ -42,7 +42,7 @@ namespace Inwentaryzacja
                 // Logowanie poprawne
                 MessageBox.Show("Logowanie udane!");
 
-                // Otwórz nowe okno aplikacji
+                // OtwÃ³rz nowe okno aplikacji
                 MainAppForm mainAppForm = new MainAppForm();
                 mainAppForm.Show();
 
@@ -52,19 +52,19 @@ namespace Inwentaryzacja
             else
             {
                 // Logowanie nieudane
-                MessageBox.Show("B³êdne dane logowania!");
+                MessageBox.Show("BÅ‚Ä™dne dane logowanie!");
 
-                // Wyczyœæ pole has³a
+                // WyczyÅ“Ã¦ pole hasÂ³a
                 textBox_Haslo.Text = "";
             }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // SprawdŸ, czy zamkniêcie dotyczy okna logowania
+            // SprawdÅ¸, czy zamkniÃªcie dotyczy okna logowania
             if (e.CloseReason == CloseReason.UserClosing && sender == this)
             {
-                // Zamknij ca³¹ aplikacjê
+                // Zamknij caÂ³Â¹ aplikacjÃª
                 Application.Exit();
             }
         }

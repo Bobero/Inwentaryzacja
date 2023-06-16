@@ -1,3 +1,4 @@
+using MySql.Data.MySqlClient;
 namespace Inwentaryzacja
 {
     internal static class Program
