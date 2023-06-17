@@ -30,11 +30,14 @@
         {
             AddCommodity = new Button();
             UsersManage = new Button();
+            StockView = new DataGridView();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)StockView).BeginInit();
             SuspendLayout();
             // 
             // AddCommodity
             // 
-            AddCommodity.Location = new Point(12, 69);
+            AddCommodity.Location = new Point(10, 29);
             AddCommodity.Name = "AddCommodity";
             AddCommodity.Size = new Size(166, 48);
             AddCommodity.TabIndex = 0;
@@ -43,23 +46,34 @@
             // 
             // UsersManage
             // 
-            UsersManage.Location = new Point(211, 69);
+            UsersManage.Location = new Point(209, 29);
             UsersManage.Name = "UsersManage";
             UsersManage.Size = new Size(166, 48);
             UsersManage.TabIndex = 1;
             UsersManage.Text = "Zarządzaj Użytkownikami";
             UsersManage.UseVisualStyleBackColor = true;
             // 
+            // StockView
+            // 
+            StockView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            StockView.Location = new Point(10, 177);
+            StockView.Name = "StockView";
+            StockView.RowTemplate.Height = 25;
+            StockView.Size = new Size(1009, 449);
+            StockView.TabIndex = 2;
+            // 
             // MainAppForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1031, 638);
+            Controls.Add(StockView);
             Controls.Add(UsersManage);
             Controls.Add(AddCommodity);
             Name = "MainAppForm";
             Text = "MainAppForm";
             Load += MainAppForm_Load;
+            ((System.ComponentModel.ISupportInitialize)StockView).EndInit();
             ResumeLayout(false);
         }
 
@@ -67,5 +81,7 @@
 
         private Button AddCommodity;
         private Button UsersManage;
+        private DataGridView StockView;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

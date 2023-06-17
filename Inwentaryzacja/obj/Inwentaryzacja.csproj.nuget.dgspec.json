@@ -47,6 +47,10 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.6, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [

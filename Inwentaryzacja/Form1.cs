@@ -1,4 +1,5 @@
-﻿namespace Inwentaryzacja
+﻿using System.Data.SqlClient;
+namespace Inwentaryzacja
 {
     public partial class Form1 : Form
     {
@@ -37,27 +38,50 @@
             string login = textBox_Login.Text;
             string haslo = textBox_Haslo.Text;
 
-            if (login == "admin" && haslo == "1234")
+            string connectionString = "Server=localhost;Database=Inwentaryzacja;User Id=user;Password=!QAZ2wsx;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                // Logowanie poprawne
-                MessageBox.Show("Logowanie udane!");
+                try
+                {
+                    connection.Open();
 
-                // Otwórz nowe okno aplikacji
-                MainAppForm mainAppForm = new MainAppForm();
-                mainAppForm.Show();
+                    // Wykonaj zapytanie do bazy danych
+                    string query = "SELECT COUNT(*) FROM users WHERE Login = @login AND Passwd = @haslo";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@login", login);
+                    command.Parameters.AddWithValue("@haslo", haslo);
 
-                // Zamknij okno logowania
-                this.Hide();
-            }
-            else
-            {
-                // Logowanie nieudane
-                MessageBox.Show("Błędne dane logowanie!");
+                    int count = Convert.ToInt32(command.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        // Logowanie poprawne
+                        MessageBox.Show("Logowanie udane!");
 
-                // Wyczyœæ pole has³a
-                textBox_Haslo.Text = "";
+                        // Otwórz nowe okno aplikacji
+                        MainAppForm mainAppForm = new MainAppForm();
+                        mainAppForm.Show();
+
+                        // Zamknij okno logowania
+                        this.Hide();
+                    }
+                    else
+                    {
+                        // Logowanie nieudane
+                        MessageBox.Show("Błędne dane logowania!");
+
+                        // Wyczyść pole hasła
+                        textBox_Haslo.Text = "";
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Obsłuż wyjątek, jeśli wystąpił problem z połączeniem lub wykonaniem zapytania
+                    MessageBox.Show("Wystąpił błąd podczas połączenia z bazą danych: " + ex.Message);
+                }
+                connection.Close();
             }
         }
+
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
