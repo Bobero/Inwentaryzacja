@@ -4,6 +4,9 @@
     <Compile Update="AddCommodityForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EditCommodityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UsersManageForm.cs">
       <SubType>Form</SubType>
     </Compile>

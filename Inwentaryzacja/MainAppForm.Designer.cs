@@ -32,6 +32,8 @@
             UsersManage = new Button();
             StockView = new DataGridView();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            LocationManage = new Button();
+            Logout = new Button();
             ((System.ComponentModel.ISupportInitialize)StockView).BeginInit();
             SuspendLayout();
             // 
@@ -62,11 +64,31 @@
             StockView.Size = new Size(1009, 449);
             StockView.TabIndex = 2;
             // 
+            // LocationManage
+            // 
+            LocationManage.Location = new Point(403, 29);
+            LocationManage.Name = "LocationManage";
+            LocationManage.Size = new Size(166, 48);
+            LocationManage.TabIndex = 3;
+            LocationManage.Text = "Zarządzaj Lokalizacjami";
+            LocationManage.UseVisualStyleBackColor = true;
+            // 
+            // Logout
+            // 
+            Logout.Location = new Point(924, 12);
+            Logout.Name = "Logout";
+            Logout.Size = new Size(95, 48);
+            Logout.TabIndex = 4;
+            Logout.Text = "Wyloguj";
+            Logout.UseVisualStyleBackColor = true;
+            // 
             // MainAppForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1031, 638);
+            Controls.Add(Logout);
+            Controls.Add(LocationManage);
             Controls.Add(StockView);
             Controls.Add(UsersManage);
             Controls.Add(AddCommodity);
@@ -83,5 +105,7 @@
         private Button UsersManage;
         private DataGridView StockView;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button LocationManage;
+        private Button Logout;
     }
 }
