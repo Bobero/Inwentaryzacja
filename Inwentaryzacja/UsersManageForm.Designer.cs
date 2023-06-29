@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "CheckStockForm";
+            UsersView = new DataGridView();
+            AddUserBtn = new Button();
+            ((System.ComponentModel.ISupportInitialize)UsersView).BeginInit();
+            SuspendLayout();
+            // 
+            // UsersView
+            // 
+            UsersView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            UsersView.Location = new Point(24, 28);
+            UsersView.Name = "UsersView";
+            UsersView.RowTemplate.Height = 25;
+            UsersView.Size = new Size(745, 361);
+            UsersView.TabIndex = 0;
+            // 
+            // AddUserBtn
+            // 
+            AddUserBtn.Location = new Point(271, 401);
+            AddUserBtn.Name = "AddUserBtn";
+            AddUserBtn.Size = new Size(257, 37);
+            AddUserBtn.TabIndex = 1;
+            AddUserBtn.Text = "Dodaj Użytkownika";
+            AddUserBtn.UseVisualStyleBackColor = true;
+            // 
+            // UsersManageForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(AddUserBtn);
+            Controls.Add(UsersView);
+            Name = "UsersManageForm";
+            Text = "UsersManageForm";
+            Load += UsersManageForm_Load;
+            ((System.ComponentModel.ISupportInitialize)UsersView).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView UsersView;
+        private Button AddUserBtn;
     }
 }

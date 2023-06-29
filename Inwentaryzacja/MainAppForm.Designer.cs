@@ -61,7 +61,7 @@
             StockView.Location = new Point(10, 177);
             StockView.Name = "StockView";
             StockView.RowTemplate.Height = 25;
-            StockView.Size = new Size(1009, 449);
+            StockView.Size = new Size(1101, 449);
             StockView.TabIndex = 2;
             // 
             // LocationManage
@@ -75,7 +75,7 @@
             // 
             // Logout
             // 
-            Logout.Location = new Point(924, 12);
+            Logout.Location = new Point(1016, 12);
             Logout.Name = "Logout";
             Logout.Size = new Size(95, 48);
             Logout.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1031, 638);
+            ClientSize = new Size(1123, 638);
             Controls.Add(Logout);
             Controls.Add(LocationManage);
             Controls.Add(StockView);

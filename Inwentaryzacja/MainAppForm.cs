@@ -125,12 +125,11 @@ namespace Inwentaryzacja
                 DateTime dataDodania = Convert.ToDateTime(StockView.Rows[e.RowIndex].Cells["DataDodania"].Value);
 
                 // Otwórz okno "EditCommodityForm" jako modalne, przekazując dane rekordu
-                EditCommodityForm editCommodityForm = new EditCommodityForm(index,uid, nazwa, lokalizacja, kategoria, model, opis, dataDodania);
+                EditCommodityForm editCommodityForm = new EditCommodityForm(index, uid, nazwa, lokalizacja, kategoria, model, opis, dataDodania);
                 editCommodityForm.ShowDialog();
 
                 // Po zamknięciu okna odśwież dane w DataGridView "StockView"
                 LoadStockData();
-                return;
             }
             else if (e.RowIndex >= 0 && e.ColumnIndex == StockView.Columns["DeleteButtonColumn"].Index)
             {
@@ -191,44 +190,7 @@ namespace Inwentaryzacja
             }
         }
 
-        private void FilterStockData(string filterText)
-        {
-            try
-            {
-                // Otwórz połączenie do bazy danych
-                connection.Open();
-
-                // Zapytanie SQL do filtrowania danych
-                string query = "SELECT * FROM Stock WHERE Nazwa LIKE @FilterText";
-
-                // Utwórz obiekt SqlCommand do wykonania zapytania
-                SqlCommand command = new SqlCommand(query, connection);
-
-                // Dodaj parametr do zapytania SQL
-                command.Parameters.AddWithValue("@FilterText", "%" + filterText + "%");
-
-                // Utwórz obiekt SqlDataAdapter do wykonania zapytania i pobrania danych
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-                // Utwórz obiekt DataTable do przechowywania pobranych danych
-                DataTable dataTable = new DataTable();
-
-                // Wypełnij obiekt DataTable danymi z bazy danych
-                adapter.Fill(dataTable);
-
-                // Przypisz DataTable jako źródło danych dla DataGridView "StockView"
-                StockView.DataSource = dataTable;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Wystąpił błąd podczas filtrowania danych: " + ex.Message);
-            }
-            finally
-            {
-                // Zamknij połączenie do bazy danych
-                connection.Close();
-            }
-        }
+        
         private void AddCommodity_Click(object sender, EventArgs e)
         {
             // Otwórz okno "AddCommodityForm" jako modalne
